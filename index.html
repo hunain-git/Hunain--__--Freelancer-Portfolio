@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Portfolio - Hunain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">Hunain.dev</div>
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#work">Work</a>
+            <a href="#case-studies">Case Studies</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-buttons">
+            <button id="themeToggle" class="theme-btn">🌙</button>
+            <button id="menuToggle" class="menu-btn">☰</button>
+        </div>
+    </header>
+
+
+    <section id="home" class="hero fade-in">
+        <div class="hero-content">
+            <h1 class="headline">Frontend Developer & UI/UX Designer</h1>
+            <p>I build modern, responsive, and high-performing websites.</p>
+            <button class="btn" onclick="scrollToSection('contact')">Hire Me</button>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about fade-in">
+        <h2>About Me</h2>
+        <img src="./images/profile.jpg.jpg" alt="Profile Picture" class="profile-img">
+        <p class="bio">
+            I’m Hunain, a passionate Frontend Developer specializing in clean user interfaces and smooth user experiences.
+            I focus on building high-quality, responsive, and aesthetic websites using modern HTML, CSS, and JavaScript.
+        </p>
+        <p>
+            <a href="mailto:hunain@example.com" target="_blank">Email Me</a> | 
+            <a href="https://linkedin.com/in" target="_blank">LinkedIn</a>
+        </p>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services fade-in">
+        <h2>My Services</h2>
+        <div class="service-grid">
+            <div class="service-card">Website Development</div>
+            <div class="service-card">UI/UX Designing</div>
+            <div class="service-card">Landing Pages</div>
+            <div class="service-card">Responsive Web Design</div>
+            <div class="service-card">Portfolio Websites</div>
+        </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="work fade-in">
+        <h2>Top Work Samples</h2>
+        <div class="project-grid">
+            <div class="project-card fade-in">
+                <h3>Portfolio Website</h3>
+                <p>A fully responsive portfolio for a creative professional.</p>
+            </div>
+            <div class="project-card fade-in">
+                <h3>Business Landing Page</h3>
+                <p>High-converting landing page for a startup brand.</p>
+            </div>
+            <div class="project-card fade-in">
+                <h3>Web App UI</h3>
+                <p>Developed a modern UI for a productivity tool.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="case-studies" class="case-studies fade-in">
+        <h2>Case Studies</h2>
+        <div class="case-card fade-in">
+            <h3>Startup Branding Website</h3>
+            <p><strong>Problem:</strong> Client needed a modern, fast website to attract users.</p>
+            <p><strong>Solution:</strong> Built a clean UI, optimized performance, and improved navigation.</p>
+            <p><strong>Result:</strong> Website conversions increased by 40% within 2 months.</p>
+        </div>
+        <div class="case-card fade-in">
+            <h3>Personal Portfolio Revamp</h3>
+            <p><strong>Problem:</strong> Outdated portfolio with poor layout.</p>
+            <p><strong>Solution:</strong> Redesigned UI, added animations & mobile responsiveness.</p>
+            <p><strong>Result:</strong> Client received 3 new job offers within a week.</p>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials fade-in">
+        <h2>Client Testimonials</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial fade-in">
+                <p>"Absolutely loved the website! Clean, modern, and fast. Highly recommended."</p>
+                <h4>- Sarah, Startup Founder</h4>
+            </div>
+            <div class="testimonial fade-in">
+                <p>"Professional and efficient. Delivered exactly what I needed on time."</p>
+                <h4>- Ahmed, Freelancer</h4>
+            </div>
+            <div class="testimonial fade-in">
+                <p>"Great communication and excellent UI/UX skills. Will hire again."</p>
+                <h4>- Emily, Business Owner</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact fade-in">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p id="formStatus"></p>
+    </section>
+
+
+    <footer class="footer">
+        <p>© 2025 Hunain.dev — All Rights Reserved</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
